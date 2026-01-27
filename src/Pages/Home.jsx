@@ -211,10 +211,12 @@ const Home = () => {
               <img
                 src={CodingGif}
                 alt="Coding Animation"
-                className={`w-full h-full transition-all duration-500 ${
+                className={`transition-all duration-500 object-contain mx-auto 
+                w-[280px] sm:w-[320px] md:w-[380px] lg:w-[420px] xl:w-[480px]
+                ${
                   isHovering
-                    ? "scale-[180%] sm:scale-[160%] md:scale-[150%] lg:scale-[145%] rotate-2"
-                    : "scale-[175%] sm:scale-[155%] md:scale-[145%] lg:scale-[140%]"
+                  ? "scale-105 rotate-2"
+                  : "scale-100"
                 }`}
               />
             </div>
