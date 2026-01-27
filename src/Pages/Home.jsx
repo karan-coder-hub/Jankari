@@ -7,12 +7,13 @@ import {
   Instagram,
   Sparkles,
 } from "lucide-react";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// 👉 Import your GIF
-import CodingGif from "../assets/Coding.gif"; 
-// ⚠️ Path change kar lena agar assets folder ka location different ho
+// 👉 Import Lottie File
+import CodingLottie from "../assets/Coding.lottie"; 
+// (Path adjust kar lena agar folder different ho)
 
 // ================= Memoized Components =================
 
@@ -201,22 +202,21 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Right Section - GIF */}
+            {/* Right Section - LOTTIE */}
             <div
-              className="w-full lg:w-1/2 h-auto lg:h-[150px] xl:h-[300px] flex items-center justify-center"
+              className="w-full lg:w-1/2 h-auto lg:h-[600px] xl:h-[750px] flex items-center justify-center"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
               data-aos="fade-left"
             >
-              <img
-                src={CodingGif}
-                alt="Coding Animation"
-                className={`transition-all duration-500 object-contain mx-auto 
-                w-[280px] sm:w-[320px] md:w-[380px] lg:w-[420px] xl:w-[480px]
-                ${
+              <DotLottieReact
+                src={CodingLottie}
+                loop
+                autoplay
+                className={`w-full h-full transition-all duration-500 ${
                   isHovering
-                  ? "scale-105 rotate-2"
-                  : "scale-100"
+                    ? "scale-[180%] sm:scale-[160%] md:scale-[150%] lg:scale-[145%] rotate-2"
+                    : "scale-[175%] sm:scale-[155%] md:scale-[145%] lg:scale-[140%]"
                 }`}
               />
             </div>
