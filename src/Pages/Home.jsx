@@ -203,7 +203,7 @@ const Home = () => {
 
             {/* Right Section - GIF */}
             <div
-              className="w-full lg:w-1/2 h-auto lg:h-[600px] xl:h-[750px] flex items-center justify-center"
+              className="w-full lg:w-1/2 h-auto lg:h-[300px] xl:h-[375px] flex items-center justify-center"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
               data-aos="fade-left"
