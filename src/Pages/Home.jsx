@@ -12,7 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // 👉 Import Lottie File
-import CodingLottie from "../assets/Coding.lottie"; 
+import CodingLottie from "../assets/syatem.lottie"; 
 // (Path adjust kar lena agar folder different ho)
 
 // ================= Memoized Components =================
